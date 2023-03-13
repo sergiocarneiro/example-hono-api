@@ -73,3 +73,7 @@ Find the `app` URL in the output and open it in your browser.
 #### 3. Making changes
 
 You can make changes in any of the projects and the development servers will automatically reload ✨
+
+## Perks
+
+- [Using with Remix](https://github.com/sergiocarneiro/example-hono-api/blob/main/apps/app/README.md)
