@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/client.ts",
+  "types": "./build/types/client.d.ts",
+  "exports": {
+    ".": {
+      "require": "./build/client.cjs",
+      "import": "./build/client.esm.js"
+    }
+  },
+  "scripts": {
+    "build": "run-p build:*",
+    "build:cjs": "esbuild ./src/client.ts --bundle --format=cjs --platform=node --outfile=build/client.cjs",
+    "build:esm": "esbuild ./src/client.ts --bundle --format=esm --platform=node --outfile=build/client.esm.js",
+    "build:types": "tsc -P ./tsconfig.build.json --emitDeclarationOnly",
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler publish src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^3.0.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230307.0",
+    "@types/node": "^18.15.0",
+    "wrangler": "^2.12.2"
+  }
+}

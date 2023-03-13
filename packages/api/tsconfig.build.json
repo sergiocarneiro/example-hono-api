@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2020",
+    "lib": ["ES2021"],
+    "outDir": "build",
+    "declaration": true,
+    "declarationDir": "build/types",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src"]
+}
