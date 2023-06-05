@@ -2,7 +2,7 @@ import { useCatch, useLoaderData } from "@remix-run/react";
 import { RPC } from "api";
 
 export async function loader() {
-  const res = await RPC["v1.0"].accounts.users.index.$get();
+  const res = await RPC["v1.0"].accounts.users.$get();
 
   if (!res.ok) {
     throw res;

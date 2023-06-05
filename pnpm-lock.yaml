@@ -49,10 +49,10 @@ importers:
     specifiers:
       '@cloudflare/workers-types': ^4.20230307.0
       '@types/node': ^18.15.0
-      hono: ^3.0.3
+      hono: ^3.2.0
       wrangler: ^2.12.2
     dependencies:
-      hono: 3.0.3
+      hono: 3.2.4
     devDependencies:
       '@cloudflare/workers-types': 4.20230307.0
       '@types/node': 18.15.0
@@ -5180,8 +5180,8 @@ packages:
     resolution: {integrity: sha512-nAxA0v8+vXSBDt3AnRUNjyRIQ0rD+ntpbAp4LnPkumc5M9yUbSMa4XDU9Q6etY4f1Wp4bNgvc1yjiZtsTTrSng==}
     dev: true
 
-  /hono/3.0.3:
-    resolution: {integrity: sha512-6Lb/TPH7Me1GAjFR7k/duzTcHS5y+rxFyL6Ky0kYQQlu92l99t53CFMVcdNUpHeStarPOs4Uzl413zIvxaI15A==}
+  /hono/3.2.4:
+    resolution: {integrity: sha512-FAYaLxCuUO1C3YkTf4ve8wEYXXo28hGop8KD9/otYa7aeODz5kZ780apYL33OJPeMIERJzkuf59A+wNt1eA4yw==}
     engines: {node: '>=16.0.0'}
     dev: false
 
